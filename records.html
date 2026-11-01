@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpine Ascents - Summit Records & Knowledge Base</title>
+    <link rel="icon" type="image/svg+xml" href="media/favicon.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-alpine sticky-top">
+        <div class="container">
+            <a class="navbar-brand text-light d-flex align-items-center me-lg-4 me-xl-5" href="index.html">
+                <img src="media/logo.svg" alt="Alpine Ascents Logo" width="34" height="34" class="d-inline-block me-2">
+                <span>Alpine Ascents</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-2 gap-lg-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="records.html">Records & Knowledge Base</a></li>
+                    <li class="nav-item"><a class="nav-link" href="clubs.html">Chapters & Map</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="nav-link nav-visitor-btn" href="#" data-bs-toggle="modal" data-bs-target="#summitVisitorsModal" title="Famous mountain summiteers and live explorers">
+                            Mountain Visitors <span class="badge bg-light text-dark ms-1 visitor-count-val">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-dark text-white text-center py-5" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('media/everest.jpg') center/cover;">
+        <div class="container py-3">
+            <h1 class="fw-bold">Mountain Records & Knowledge Base</h1>
+            <p>Summit Logs, Altitude Calculator, and Field Guides</p>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="card shadow-sm border-0 mb-5">
+            <div class="card-header bg-dark text-white">
+                <h5 class="mb-0">World Famous Mountain Peaks</h5>
+            </div>
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover mb-0">
+                        <thead class="table-light">
+                            <tr>
+                                <th>#</th>
+                                <th>Mountain Name</th>
+                                <th>Height</th>
+                                <th>Location</th>
+                                <th>First Climbed</th>
+                                <th>Difficulty</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><strong>Mount Everest</strong></td>
+                                <td>8,848 m</td>
+                                <td>Nepal / China</td>
+                                <td>1953</td>
+                                <td><span class="badge bg-danger">Extreme</span></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><strong>K2</strong></td>
+                                <td>8,611 m</td>
+                                <td>Pakistan / China</td>
+                                <td>1954</td>
+                                <td><span class="badge bg-dark">Hardest</span></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><strong>Kangchenjunga</strong></td>
+                                <td>8,586 m</td>
+                                <td>India / Nepal</td>
+                                <td>1955</td>
+                                <td><span class="badge bg-danger">Extreme</span></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><strong>Nanga Parbat</strong></td>
+                                <td>8,126 m</td>
+                                <td>Pakistan</td>
+                                <td>1953</td>
+                                <td><span class="badge bg-danger">Killer Mountain</span></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><strong>Mont Blanc</strong></td>
+                                <td>4,809 m</td>
+                                <td>France / Italy</td>
+                                <td>1786</td>
+                                <td><span class="badge bg-info text-dark">Moderate</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="card shadow-sm border-0 p-4 mb-5 bg-white">
+            <div class="d-flex align-items-center mb-3">
+                <div class="real-icon-pill bg-sky-subtle me-3">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="4" y="2" width="16" height="20" rx="2"/>
+                        <line x1="8" y1="6" x2="16" y2="6"/>
+                        <line x1="16" y1="14" x2="16" y2="18"/>
+                        <path d="M16 10h.01"/>
+                        <path d="M12 10h.01"/>
+                        <path d="M8 10h.01"/>
+                        <path d="M12 14h.01"/>
+                        <path d="M8 14h.01"/>
+                        <path d="M12 18h.01"/>
+                        <path d="M8 18h.01"/>
+                    </svg>
+                </div>
+                <div>
+                    <h4 class="fw-bold mb-0">Interactive Altitude Calculator</h4>
+                    <p class="text-muted small mb-0">Check effective oxygen level, water boiling point, and acclimatization risk</p>
+                </div>
+            </div>
+            <div class="row g-3 align-items-end">
+                <div class="col-md-8">
+                    <label class="form-label small fw-bold">Enter Altitude (in meters):</label>
+                    <input type="number" id="altitudeInput" class="form-control" placeholder="e.g. 5364 for Everest Base Camp" value="5364">
+                </div>
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-warning w-100 fw-bold" onclick="calculateAltitude()">Calculate Effects</button>
+                </div>
+            </div>
+            <div id="altitudeResult" class="mt-3"></div>
+        </div>
+
+        <div class="mb-5">
+            <h4 class="fw-bold mb-3">Mountaineering Knowledge Base (6 Modules)</h4>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-3">
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="badge bg-danger me-2">Module 1</span>
+                            <h6 class="fw-bold mb-0">High-Altitude Hazards</h6>
+                        </div>
+                        <p class="small text-muted mb-0">Learn about AMS (Acute Mountain Sickness), HAPE, HACE, frostbite symptoms, and crossing crevasse zones safely.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-3">
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="badge bg-primary me-2">Module 2</span>
+                            <h6 class="fw-bold mb-0">Emergency Shelters</h6>
+                        </div>
+                        <p class="small text-muted mb-0">Techniques for carving emergency snow caves, pitching 4-season geodesic tents, and deploying insulated bivy sacks.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-3">
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="badge bg-success me-2">Module 3</span>
+                            <h6 class="fw-bold mb-0">Essential Climbing Knots</h6>
+                        </div>
+                        <p class="small text-muted mb-0">Step-by-step knot guide: Figure-8 loop on a bight, Clove Hitch for anchors, Bowline, and Prusik friction hitch.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-3">
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="badge bg-warning text-dark me-2">Module 4</span>
+                            <h6 class="fw-bold mb-0">Acclimatization Rules</h6>
+                        </div>
+                        <p class="small text-muted mb-0">The golden rule: "Climb high, sleep low". Never ascend more than 300 to 500 meters sleeping elevation per day.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-3">
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="badge bg-info text-dark me-2">Module 5</span>
+                            <h6 class="fw-bold mb-0">High-Altitude Nutrition</h6>
+                        </div>
+                        <p class="small text-muted mb-0">Carbohydrate-dense meals, electrolyte replenishment, and melting clean glacial snow for 4 to 5 liters of daily water.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-3">
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="badge bg-dark me-2">Module 6</span>
+                            <h6 class="fw-bold mb-0">First Aid & Rescue</h6>
+                        </div>
+                        <p class="small text-muted mb-0">Emergency protocols: immediate descent, portable Gamow hyperbaric chambers, supplemental oxygen bottles, and helicopter signals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h4 class="fw-bold mb-3">Our Club Achievements</h4>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="p-3 bg-white rounded shadow-sm border-start border-4 border-success">
+                    <h5 class="fw-bold">14 Peaks Challenge</h5>
+                    <p class="small text-muted mb-0">Our instructors have successfully reached all 14 peaks above 8,000 meters.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 bg-white rounded shadow-sm border-start border-4 border-primary">
+                    <h5 class="fw-bold">Student Climbers</h5>
+                    <p class="small text-muted mb-0">Trained and guided beginner student teams up to Mount Kilimanjaro safely.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 bg-white rounded shadow-sm border-start border-4 border-warning">
+                    <h5 class="fw-bold">Safety Award</h5>
+                    <p class="small text-muted mb-0">Won the national safety trophy for zero accidents on guided expeditions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="modal fade" id="summitVisitorsModal" tabindex="-1" aria-labelledby="summitVisitorsTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-header modal-header-emerald">
+                    <div>
+                        <h5 class="modal-title fw-bold mb-0" id="summitVisitorsTitle">
+                            Famous Mountain Visitors & Summit Roll of Honor
+                        </h5>
+                        <small class="text-light">Discover legendary climbers and mountaineers who conquered these peaks</small>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="p-3 bg-light rounded border mb-4 d-flex justify-content-between align-items-center">
+                        <div>
+                            <span class="text-muted small d-block">Live Website Visitors</span>
+                            <h3 class="fw-bold text-success mb-0"><span class="visitor-count-val">0</span> Active Explorers</h3>
+                        </div>
+                        <a href="contact.html" class="btn btn-success btn-sm fw-bold">Register Your Summit</a>
+                    </div>
+                    <div id="summitVisitorsContent"></div>
+                </div>
+                <div class="modal-footer bg-light">
+                    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                    <a href="records.html" class="btn btn-success btn-sm fw-bold">View Full Records &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+        <div class="modal fade" id="liveLocationModal" tabindex="-1" aria-labelledby="liveLocModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title fw-bold" id="liveLocModalLabel">Live GPS Location Tracker</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center p-4">
+                    <div class="mb-3">
+                        <i class="fa-solid fa-map-location-dot text-success fa-3x mb-2"></i>
+                        <h6 class="fw-bold mb-1">Live Coordinates Detected</h6>
+                        <p class="text-muted small">Real-time browser telemetry and high-altitude positioning</p>
+                    </div>
+                    <div class="p-3 bg-light rounded border text-start mb-3">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="text-muted small">Current Latitude:</span>
+                            <strong class="text-dark" id="liveLocLat">Detecting...</strong>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="text-muted small">Current Longitude:</span>
+                            <strong class="text-dark" id="liveLocLon">Detecting...</strong>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span class="text-muted small">Signal Accuracy:</span>
+                            <span class="badge bg-success" id="liveLocAcc">Calculating...</span>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <a href="clubs.html" class="btn btn-warning fw-bold flex-grow-1"><i class="fa-solid fa-map-location-dot me-1"></i> View on Map</a>
+                        <button type="button" class="btn btn-secondary fw-bold" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-alpine">
+        <div class="container pb-4">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="d-flex align-items-center">
+                        <img src="media/logo.svg" width="30" height="30" class="me-2" alt="Logo">
+                        Alpine Ascents
+                    </h5>
+                    <p class="small text-muted">
+                        Guiding high-altitude mountaineers and adventurous spirits across the highest seven summits of the globe with unparalleled safety records since 1998.
+                    </p>
+                                                            <div class="p-2 bg-dark rounded d-inline-block small text-light border border-secondary">
+                        <i class="fi fi-rr-eye text-warning me-1"></i> Live Visitors: <span class="visitor-count-val fw-bold text-success">0</span>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="index.html">Home</a></li>
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="records.html">Records & Knowledge Base</a></li>
+                        <li class="mb-2"><a href="clubs.html">Chapters & Map</a></li>
+                        <li class="mb-2"><a href="gallery.html">Gallery</a></li>
+                        <li class="mb-2"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-6">
+                    <h5>Contact Info</h5>
+                    <p class="small text-muted mb-1"><i class="fi fi-rr-marker text-warning me-2"></i> 109 W Mercer St, Seattle, WA 98119</p>
+                    <p class="small text-muted mb-1"><i class="fi fi-rr-call-incoming text-warning me-2"></i> +1 (206) 378-1927</p>
+                    <p class="small text-muted"><i class="fi fi-rr-envelope text-warning me-2"></i> climb@alpineascents.com</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Newsletter</h5>
+                    <p class="small text-muted">Subscribe for expedition dates, altitude training guides, and gear promotions.</p>
+                    <form onsubmit="return validateAlpineForm(event);">
+                        <div class="input-group mb-2">
+                            <input type="email" class="form-control form-control-sm" placeholder="Enter your email" required>
+                            <button class="btn btn-warning btn-sm fw-bold" type="submit">Join</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <hr class="border-secondary mt-4 mb-3">
+            <div class="text-center small text-muted">
+                &copy; 2026 Alpine Ascents Mountaineering Club. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <div class="sticky-bottom-bar">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+            <div class="d-flex align-items-center gap-3">
+                <span class="text-white-50"><i class="fi fi-rr-calendar text-warning me-1"></i> <strong class="text-light" id="stickyDate">Loading date...</strong></span>
+                <span class="text-white-50"><i class="fi fi-rr-clock text-info me-1"></i> <strong class="text-light font-monospace" id="stickyTime">Loading time...</strong></span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+                <span class="text-white-50"><i class="fi fi-rr-marker text-success me-1"></i> <strong class="text-light" id="stickyLocation">Detecting location...</strong></span>
+                <span class="badge bg-success bg-opacity-75 small py-1 px-2 d-none d-sm-inline-block"><i class="fa-solid fa-circle-dot fa-fade me-1"></i> Live</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

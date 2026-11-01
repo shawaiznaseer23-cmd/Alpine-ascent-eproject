@@ -1,0 +1,327 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpine Ascents - Contact Us</title>
+    <link rel="icon" type="image/svg+xml" href="media/favicon.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-alpine sticky-top">
+        <div class="container">
+            <a class="navbar-brand text-light d-flex align-items-center me-lg-4 me-xl-5" href="index.html">
+                <img src="media/logo.svg" alt="Alpine Ascents Logo" width="34" height="34" class="d-inline-block me-2">
+                <span>Alpine Ascents</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-2 gap-lg-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="records.html">Records & Knowledge Base</a></li>
+                    <li class="nav-item"><a class="nav-link" href="clubs.html">Chapters & Map</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="nav-link nav-visitor-btn" href="#" data-bs-toggle="modal" data-bs-target="#summitVisitorsModal" title="Famous mountain summiteers and live explorers">
+                            Mountain Visitors <span class="badge bg-light text-dark ms-1 visitor-count-val">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-dark text-white text-center py-5" style="background: linear-gradient(rgba(11,25,44,0.85), rgba(11,25,44,0.85)), url('media/banner.jpg') center/cover;">
+        <div class="container py-3">
+            <h1 class="fw-bold">Contact Alpine Ascents</h1>
+            <p class="lead text-light">Get in touch with our expedition directors and 24/7 mountain dispatch team</p>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm p-4 text-center contact-card-box">
+                    <div class="real-icon-pill bg-emerald-subtle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 56px; height: 56px;"><i class="fi fi-rr-map-marker" style="font-size: 26px; color: #059669;"></i></div>
+                    <h5 class="fw-bold">Headquarters Address</h5>
+                    <p class="small text-muted mb-0">109 W Mercer St, Seattle, WA 98119, USA</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm p-4 text-center contact-card-box">
+                    <div class="real-icon-pill bg-sky-subtle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 56px; height: 56px;"><i class="fi fi-rr-call-incoming" style="font-size: 26px; color: #2563eb;"></i></div>
+                    <h5 class="fw-bold">Phone & 24/7 Hotline</h5>
+                    <p class="small text-muted mb-0">+1 (206) 378-1927<br>Toll Free: 1-800-257-4631</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm p-4 text-center contact-card-box">
+                    <div class="real-icon-pill bg-amber-subtle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 56px; height: 56px;"><i class="fi fi-rr-envelope" style="font-size: 26px; color: #d97706;"></i></div>
+                    <h5 class="fw-bold">Email Inquiries</h5>
+                    <p class="small text-muted mb-0">climb@alpineascents.com<br>info@alpineascents.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10 col-12">
+                <div class="card contact-card-box p-4 p-md-5 shadow">
+                    <div class="text-center mb-4">
+                        <span class="badge bg-success px-3 py-2 text-uppercase mb-2">Direct Inquiry</span>
+                        <h3 class="fw-bold text-dark text-center">Send Us a Message</h3>
+                        <p class="small text-muted mb-0">Have questions about an upcoming climb, medical clearances, or gear checklists? Reach out directly to our expedition leaders.</p>
+                    </div>
+                    
+                    <form id="contactPageForm" onsubmit="return validateAlpineForm(event);" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label small fw-bold">Full Name <span class="text-danger">*</span></label>
+                                <input type="text" id="contactFullName" name="fullName" class="form-control" placeholder="Enter full name (alphabets only)" required onkeydown="blockNumbersInName(event)" oninput="sanitizeAndValidateName(this)">
+                                <div id="contactNameError" class="invalid-feedback">Ghalti: Naam mein numbers ya digits allow nahi hain! Sirf alphabetic letters likhein.</div>
+                                <div class="valid-feedback">Looks great!</div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label small fw-bold">Email Address <span class="text-danger">*</span></label>
+                                <input type="email" id="contactEmail" name="email" class="form-control" placeholder="e.g. climber@gmail.com" required oninput="validateEmailInput(this)">
+                                <div class="invalid-feedback">Durust Email address darj karein (e.g. name@gmail.com).</div>
+                                <div class="valid-feedback">Valid email!</div>
+                            </div>
+                        </div>
+
+                        <div class="row g-3">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label small fw-bold">Phone Number <span class="text-danger">*</span></label>
+                                <input type="tel" id="contactPhone" name="phone" class="form-control" placeholder="030XXXXXXXX" required oninput="validatePhoneInput(this)">
+                                <div class="invalid-feedback">Phone number mein sirf digits (kam az kam 10-11 numbers jaise 030XXXXXXXX) darj karein.</div>
+                                <div class="valid-feedback">Valid phone!</div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label small fw-bold">Subject / Inquiry Type</label>
+                                <select class="form-select">
+                                    <option>Expedition Booking & Dates</option>
+                                    <option>Gear & Packing Consultation</option>
+                                    <option>Altitude Medical Clearances</option>
+                                    <option>Private Group Charter</option>
+                                    <option>General Information</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label small fw-bold">Your Message <span class="text-danger">*</span></label>
+                            <textarea id="contactMessage" class="form-control" rows="4" placeholder="Tell us about your mountaineering background, questions, or target summits..." required></textarea>
+                        </div>
+                        <div id="formSuccessAlert" class="alert alert-success d-none mb-3 py-2 small" role="alert">
+                            <i class="fa-solid fa-circle-check me-1"></i> Thank you! Your message has been sent successfully. Our expedition team will reply shortly.
+                        </div>
+                        <button type="submit" class="btn btn-success w-100 fw-bold py-3 shadow-sm fs-6">Send Message to Expedition Team &rarr;</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5 py-3" id="contactFaqSection">
+        <div class="text-center mb-5">
+            <span class="badge bg-warning text-dark px-3 py-2 text-uppercase mb-2">Frequently Asked Questions</span>
+            <h3 class="fw-bold">Expedition & Membership FAQs</h3>
+            <p class="text-muted small">Everything you need to know about climbing, conditioning, and joining Alpine Ascents</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-12">
+                <div class="accordion" id="contactFaqAccordion">
+                    <div class="accordion-item faq-responsive-card mb-3">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button faq-responsive-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                Can absolute beginners apply for expeditions?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#contactFaqAccordion">
+                            <div class="accordion-body faq-responsive-body">
+                                Yes! We have beginner developmental tracks starting with basic rope management, crampon walking on easy glaciers, and non-technical treks like Mount Kilimanjaro and Himalayan Base Camps. No prior experience is required for Level 1 treks.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item faq-responsive-card mb-3">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed faq-responsive-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                What medical and fitness screenings are mandatory?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#contactFaqAccordion">
+                            <div class="accordion-body faq-responsive-body">
+                                All applicants joining technical summits must submit a physician-certified cardiovascular stress test, ECG clearance, and participate in our 12-week supervised conditioning syllabus with weekly fitness logs.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item faq-responsive-card mb-3">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed faq-responsive-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                Does Alpine Ascents provide technical climbing gear?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#contactFaqAccordion">
+                            <div class="accordion-body faq-responsive-body">
+                                We provide all group safety hardware including technical dynamic ropes, snow anchors, satellite emergency transmitters, and expedition high-altitude tents. Personal gear (boots, down suits, harnesses) can be rented with a 35% member discount.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item faq-responsive-card mb-3">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed faq-responsive-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                How are high-altitude weather and safety emergencies handled?
+                            </button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#contactFaqAccordion">
+                            <div class="accordion-body faq-responsive-body">
+                                Every expedition is equipped with satellite telemetry communicating twice daily with mountain meteorological stations. Forward camps carry high-flow supplemental oxygen, Gamow hyperbaric chambers, and chartered SOS helicopter telemetry.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="liveLocationModal" tabindex="-1" aria-labelledby="liveLocModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title fw-bold" id="liveLocModalLabel">Live GPS Location Tracker</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center p-4">
+                    <div class="mb-3">
+                        <i class="fa-solid fa-map-location-dot text-success fa-3x mb-2"></i>
+                        <h6 class="fw-bold mb-1">Live Coordinates Detected</h6>
+                        <p class="text-muted small">Real-time browser telemetry and high-altitude positioning</p>
+                    </div>
+                    <div class="p-3 bg-light rounded border text-start mb-3">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="text-muted small">Current Latitude:</span>
+                            <strong class="text-dark" id="liveLocLat">Detecting...</strong>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="text-muted small">Current Longitude:</span>
+                            <strong class="text-dark" id="liveLocLon">Detecting...</strong>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span class="text-muted small">Signal Accuracy:</span>
+                            <span class="badge bg-success" id="liveLocAcc">Calculating...</span>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success fw-bold w-100" data-bs-dismiss="modal"><i class="fa-solid fa-circle-check me-1"></i> Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="summitVisitorsModal" tabindex="-1" aria-labelledby="summitVisitorsTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-header modal-header-emerald">
+                    <div>
+                        <h5 class="modal-title fw-bold mb-0" id="summitVisitorsTitle">
+                            Famous Mountain Visitors & Summit Roll of Honor
+                        </h5>
+                        <small class="text-light">Discover legendary climbers and mountaineers who conquered these peaks</small>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="p-3 bg-light rounded border mb-4 d-flex justify-content-between align-items-center">
+                        <div>
+                            <span class="text-muted small d-block">Live Website Visitors</span>
+                            <h3 class="fw-bold text-success mb-0"><span class="visitor-count-val">0</span> Active Explorers</h3>
+                        </div>
+                        <a href="contact.html" class="btn btn-success btn-sm fw-bold">Register Your Summit</a>
+                    </div>
+                    <div id="summitVisitorsContent"></div>
+                </div>
+                <div class="modal-footer bg-light">
+                    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                    <a href="records.html" class="btn btn-success btn-sm fw-bold">View Full Records Table &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-alpine">
+        <div class="container pb-4">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="d-flex align-items-center">
+                        <img src="media/logo.svg" width="30" height="30" class="me-2" alt="Logo">
+                        Alpine Ascents
+                    </h5>
+                    <p class="small text-muted">
+                        Guiding high-altitude mountaineers and adventurous spirits across the highest seven summits of the globe with unparalleled safety records since 1998.
+                    </p>
+                                                            <div class="p-2 bg-dark rounded d-inline-block small text-light border border-secondary">
+                        <i class="fi fi-rr-eye text-warning me-1"></i> Live Visitors: <span class="visitor-count-val fw-bold text-success">0</span>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="index.html">Home</a></li>
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="records.html">Records & Knowledge Base</a></li>
+                        <li class="mb-2"><a href="clubs.html">Chapters & Map</a></li>
+                        <li class="mb-2"><a href="gallery.html">Gallery</a></li>
+                        <li class="mb-2"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-6">
+                    <h5>Contact Info</h5>
+                    <p class="small text-muted mb-1"><i class="fi fi-rr-marker text-warning me-2"></i> 109 W Mercer St, Seattle, WA 98119</p>
+                    <p class="small text-muted mb-1"><i class="fi fi-rr-call-incoming text-warning me-2"></i> +1 (206) 378-1927</p>
+                    <p class="small text-muted"><i class="fi fi-rr-envelope text-warning me-2"></i> climb@alpineascents.com</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Newsletter</h5>
+                    <p class="small text-muted">Subscribe for expedition dates, altitude training guides, and gear promotions.</p>
+                    <form onsubmit="return validateAlpineForm(event);">
+                        <div class="input-group mb-2">
+                            <input type="email" class="form-control form-control-sm" placeholder="Enter your email" required>
+                            <button class="btn btn-warning btn-sm fw-bold" type="submit">Join</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <hr class="border-secondary mt-4 mb-3">
+            <div class="text-center small text-muted">
+                &copy; 2026 Alpine Ascents Mountaineering Club. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <div class="sticky-bottom-bar">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+            <div class="d-flex align-items-center gap-3">
+                <span class="text-white-50"><i class="fi fi-rr-calendar text-warning me-1"></i> <strong class="text-light" id="stickyDate">Loading date...</strong></span>
+                <span class="text-white-50"><i class="fi fi-rr-clock text-info me-1"></i> <strong class="text-light font-monospace" id="stickyTime">Loading time...</strong></span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+                <span class="text-white-50"><i class="fi fi-rr-marker text-success me-1"></i> <strong class="text-light" id="stickyLocation">Detecting location...</strong></span>
+                <span class="badge bg-success bg-opacity-75 small py-1 px-2 d-none d-sm-inline-block"><i class="fa-solid fa-circle-dot fa-fade me-1"></i> Live</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
